@@ -13,6 +13,7 @@
     "-": "^0.0.1",
     "@reduxjs/toolkit": "^2.2.1",
     "@tailwindcss/line-clamp": "^0.4.4",
+    "collage-project-estate-website": "file:..",
     "D": "^1.0.0",
     "firebase": "^10.8.1",
     "react": "^18.2.0",
