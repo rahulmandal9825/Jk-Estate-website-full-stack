@@ -67,6 +67,7 @@ MongoDB
 JWT Authentication
 Redux Toolkit
 HTML & CSS
+tailwind css
 
 ## Contributing.
 Ther is two problems
