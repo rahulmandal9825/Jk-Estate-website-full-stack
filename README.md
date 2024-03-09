@@ -50,15 +50,15 @@ JWT_SECRET=your_jwt_secret
 VITE_FIREBASE_API_KEY = your firebase api
 
 
-##Run the development server:
+## Run the development server:
 npm run dev
 
-##Your project should be running at http://localhost:3000.
+## Your project should be running at http://localhost:3000.
 
-##Folder Structure
+## Folder Structure
 Project is consistent  of api folder which backend and client which is fontend.
 
-##Technologies Used
+## Technologies Used
 Vite
 React
 Node.js
