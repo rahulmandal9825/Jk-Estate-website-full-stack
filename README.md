@@ -1,4 +1,4 @@
-# Jk Estate website 
+![Screenshot 2024-03-09 175630](https://github.com/rahulmandal9825/Jk-Estate-website-full-stack/assets/129999779/2749f998-392d-48de-8f89-eceba25056cc)# Jk Estate website 
 
 This is website where USer can put there properties for sell and rent and user can also search for sutible properties.
 its have  google login functions 
@@ -17,13 +17,20 @@ This project contain
 1.home page 
 2.Navbar
 3.profile
-4.Singin
+4.Singin!
 5.signout
 6.signup and sign with google using firebase
 7.create properties  listing 
 8.search properties per user preferences like rent , sell, how many bedroom should be thier or etc
 9.delete Listing 
 10.after login use can change for img and USERNAME AND PASSWORD.
+
+## Screenshot:
+![Screenshot 2024-03-09 175618](https://github.com/rahulmandal9825/Jk-Estate-website-full-stack/assets/129999779/961427f1-590b-4836-87c8-40c5d0a04474)
+[Uploading Screenshot 2024-03-09 175630.png…]()
+
+
+
 
 
 ## Prerequisites
