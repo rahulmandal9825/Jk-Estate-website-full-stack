@@ -170,10 +170,12 @@ export default function Profile() {
       to="/Update-account" > Update Account</Link>
       <Link className='bg-black p-5  text-white rounded-xl hover:opacity-85 text-center disabled:opacity-95 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300' to="/create-listing">Create Listing</Link>
 
-         <span className=' cursor-pointer  w-full bg-black text-white p-5 rounded-xl hover:opacity-85 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300 'onClick={handleDeleteUser}
+         <span className=' cursor-pointer  w-full bg-black text-white p-5 rounded-xl hover:opacity-85 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300 ' onClick={()=>{
+        setTrigger(true);
+      }} 
        > Delete Account</span>
 
-         <span className='  w-full bg-black text-white p-5 rounded-xl hover:opacity-85 cursor-pointer transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300'  onClick={handleSignOut}> Sign Out</span>
+         <span className='  w-full bg-black text-white p-5 rounded-xl hover:opacity-85 cursor-pointer transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300'onClick={handleSignOut} > Sign Out</span>
       </div>
       
       </div>
@@ -183,16 +185,16 @@ export default function Profile() {
       className='bg-yellow-400  border-2 border-white font-bold cursor-pointer w-[400px] h-[50px] p-6 rounded-xl'>
         Show My properties
       </button> */}
-     {/* <Popup trigger={trigger}>
+     <Popup trigger={trigger}>
       <div className=' w-[600px] '>
       <h1 className='text-red-600 font-semibold'>Are You sure you want to Delete Your Account</h1>
       <p className='text-red-600  font-semibold'>It will Delete your all Listing also</p>
       <div className='flex justify-center gap-5 p-3'>
-      <button className='bg-red-600 p-1 px-5 rounded-xl text-white font-semibold'  >Yes</button>
+      <button className='bg-red-600 p-1 px-5 rounded-xl text-white font-semibold' onClick={handleDeleteUser}  >Yes</button>
       <button className='bg-green-600 p-1 px-5 rounded-xl text-white font-semibold' onClick={()=>{
         setTrigger(false);
       }}>NO</button></div></div>
-     </Popup> */}
+     </Popup>
       <div className=' p-2 '>
 
         {userListings.length < 1 && 

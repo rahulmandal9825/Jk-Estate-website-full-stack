@@ -6,6 +6,7 @@ import { Navigation,Autoplay } from 'swiper/modules';
 import 'swiper/css/bundle';
 import {  useSelector } from 'react-redux';
 import Contact from '../components/Contact';
+import Spinner from '../assets/Spinner.svg'
   
 
 export default function Listing() {
@@ -46,7 +47,7 @@ export default function Listing() {
 
   return (
     <main className=' bg-slate-800 h-[120vh] md:h-[89.2vh]'>
-      {loading && <p className='text-center my-7 text-2xl'>Loading...</p>}
+      {loading && <p className='text-center my-7 text-2xl'><img src={Spinner} alt="" /></p>}
       {error && (
         <p className='text-center my-7 text-2xl'>Something went wrong!</p>
       )}

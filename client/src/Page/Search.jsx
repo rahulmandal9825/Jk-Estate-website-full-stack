@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ListingItem from '../components/ListingItem';
+import Spinner from '../assets/Spinner.svg'
+
 export default function Search() {
   const navigate = useNavigate();
   const [sidebardata, setSidebardata] = useState({
@@ -239,8 +241,8 @@ export default function Search() {
             <p className='text-xl text-slate-700'>No listing found!</p>
           )}
           {loading && (
-            <p className='text-xl text-slate-700 text-center w-full'>
-              Loading...
+            <p className='w-[80px]'>
+              <img src={Spinner} alt="" />
             </p>
           )}
 
