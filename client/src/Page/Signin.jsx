@@ -16,7 +16,7 @@ export default function Signin() {
             [e.target.id]: e.target.value,
         });
     };
-    console.log(formData);
+    
     const handlesubmit = async (e) => {
         e.preventDefault();
         try {
@@ -30,7 +30,7 @@ export default function Signin() {
                 body: JSON.stringify(formData),
             });
             const data = await res.json();
-            console.log(data);
+
             if (data.succes === false) {
                 dispatch(signInFailure(data.message));
 

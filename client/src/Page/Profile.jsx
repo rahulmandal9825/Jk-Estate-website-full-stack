@@ -186,9 +186,9 @@ export default function Profile() {
         Show My properties
       </button> */}
      <Popup trigger={trigger}>
-      <div className=' w-[600px] '>
+      <div className='w-[330px] md:w-[600px] '>
       <h1 className='text-red-600 font-semibold'>Are You sure you want to Delete Your Account</h1>
-      <p className='text-red-600  font-semibold'>It will Delete your all Listing also</p>
+      <p className='text-red-600  font-semibold'>It will Delete your all Listing </p>
       <div className='flex justify-center gap-5 p-3'>
       <button className='bg-red-600 p-1 px-5 rounded-xl text-white font-semibold' onClick={handleDeleteUser}  >Yes</button>
       <button className='bg-green-600 p-1 px-5 rounded-xl text-white font-semibold' onClick={()=>{
@@ -211,7 +211,7 @@ export default function Profile() {
           <p className='text-red-700 '>
         {showListingsError ? 'Error showing listings' : ''}
       </p>
-          <div className="flex flex-wrap justify-center gap-10 ">
+          <div className="flex flex-wrap h-[90vh]  justify-start ml-10 gap-10 overflow-auto ">
           
 {userListings.map((listing) => (
            

@@ -26,7 +26,7 @@ const handlesubmit= async(e)=>{
          body:JSON.stringify(formData),
     });
     const data =await res.json();
-    console.log(data);
+  
     if (!data.succes === false) {
       setError(data.message);
       setLoading(false);
@@ -46,8 +46,8 @@ const handlesubmit= async(e)=>{
  
   return (
 
-    <div className='p-3 max-w-full mx-auto h-screen flex justify-center bg-slate-800'>
-      <div className=" md:w-[50%] md:m-5 rounded-2xl md:p-5 flex flex-col gap-5  h-[70%]">
+    <div className='p-3 max-w-full md:mx-auto h-screen flex justify-center bg-slate-800'>
+      <div className="w-full md:w-[50%] md:m-5 rounded-2xl md:p-5 flex flex-col gap-5  h-[70%]">
       <h1 className='bg-yellow-400 self-center text-black w-[150px] rounded-xl p-2 text-3xl text-center font-semibold my-7'>Sign Up</h1>
       <form onSubmit={handlesubmit} className='flex flex-col gap-4'>
         <input type="text" placeholder='Username' id='username' className=' border p-3 rounded-lg' onChange={handlechange} />

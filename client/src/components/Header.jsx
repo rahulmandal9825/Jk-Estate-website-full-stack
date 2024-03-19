@@ -60,7 +60,7 @@ export default function Header() {
                                 </div>
                             
                         ) : (
-                            <li className=" min-w-[80px] cursor-pointer font-bold  hover:opacity-85 flex gap-1 bg-yellow-400 text-black rounded-lg p-2 text-sm md:text-base hover:opacity-90 mr-2 shadow-lg  shadow-yellow-400/50 ">Sign In<i class="fa-solid self-center fa-arrow-right-to-bracket"></i></li>
+                            <li className=" min-w-[80px] cursor-pointer font-bold  hover:opacity-85 flex gap-1 bg-yellow-400 text-black rounded-lg p-2 text-sm md:text-base hover:opacity-90 mr-2 shadow-lg  shadow-yellow-400/50 ">Sign In<i className="fa-solid self-center fa-arrow-right-to-bracket"></i></li>
                         )}
                     </Link>
                 </ul>
